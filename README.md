@@ -19,6 +19,9 @@ Se você ainda não tem o ROS Noetic instalado, siga as instruções no [site of
 
 Se você ainda não possui um workspace ROS, crie um novo workspace com os seguintes comandos:
 
+## Passo 2: Adicionando o Pacote ao Workspace
+
+Clone este repositório no diretório src do seu workspace:
 ```bash
 # Crie o diretório do workspace
 mkdir -p ~/catkin_ws/src
@@ -27,3 +30,6 @@ cd ~/catkin_ws/
 # Inicialize o workspace com catkin
 catkin_make
 source devel/setup.bash
+
+cd ~/catkin_ws/src
+git clone https://github.com/seu_usuario/nome_do_repositorio.git

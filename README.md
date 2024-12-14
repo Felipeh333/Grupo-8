@@ -1,4 +1,6 @@
 # Grupo-8
+
+
 # Projeto ROS Noetic
 
 Este repositório contém um pacote ROS Noetic que pode ser adicionado ao diretório `src` de seu workspace e executado a partir dos scripts `launch`.
@@ -19,26 +21,47 @@ Se você ainda não tem o ROS Noetic instalado, siga as instruções no [site of
 
 Se você ainda não possui um workspace ROS, crie um novo workspace com os seguintes comandos:
 
+
+# Crie o diretório do workspace
+```
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/
+```
+
+# Inicialize o workspace com catkin
+```
+catkin_make
+source devel/setup.bash
+```
+
 ## Passo 2: Adicionando o Pacote ao Workspace
 
 Clone este repositório no diretório src do seu workspace:
-```bash
-# Crie o diretório do workspace
-mkdir -p ~/catkin_ws/src
-cd ~/catkin_ws/
 
-Navegue até o diretório do seu workspace:
-cd ~/catkin_ws
-
-## Passo 3: Compilando o Pacote
-catkin_make
-source devel/setup.bash
-
-Compile o workspace usando o catkin_make:
-
-# Inicialize o workspace com catkin
-catkin_make
-source devel/setup.bash
-
+```
 cd ~/catkin_ws/src
 git clone https://github.com/seu_usuario/nome_do_repositorio.git
+```
+
+## Passo 3: Compilando o Pacote
+
+Navegue até o diretório do seu workspace:
+```
+cd ~/catkin_ws
+```
+Compile o workspace usando o catkin_make:
+```
+catkin_make
+source devel/setup.bash
+```
+
+## Passo 4: Executando os Scripts de Lançamento
+
+Para lançar o robo no Gazebo, use o seguinte comando:
+```
+roslaunch my_robot_urdf spawn_urdf.launch
+```
+Para lançar o robo no RViz, use os seguinte comando:
+```
+roslaunch my_robot_urdf display.launch
+```

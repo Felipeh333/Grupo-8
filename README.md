@@ -9,8 +9,8 @@ Este repositório contém um pacote ROS Noetic que pode ser adicionado ao diret�
 
 Antes de começar, verifique se você tem as seguintes ferramentas instaladas:
 
-- [ROS Noetic](http://wiki.ros.org/noetic) (completo ou a versão que você precisa)
-- [catkin](http://wiki.ros.org/catkin) (para compilar o workspace)
+- ROS Noetic
+- catkin (para compilar o workspace)
 - Sistema operacional Ubuntu (recomendado)
 
 ### Instalando o ROS Noetic

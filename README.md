@@ -27,6 +27,15 @@ Clone este repositório no diretório src do seu workspace:
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 
+Navegue até o diretório do seu workspace:
+cd ~/catkin_ws
+
+## Passo 3: Compilando o Pacote
+catkin_make
+source devel/setup.bash
+
+Compile o workspace usando o catkin_make:
+
 # Inicialize o workspace com catkin
 catkin_make
 source devel/setup.bash
